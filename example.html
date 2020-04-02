@@ -64,58 +64,58 @@
     
        <div id="content" class="classMainTextic col-md-12">
         class ArrayBubble{
-    private long[] a;   //ссылка на массив
-    private int elems;  //количество элементов в массиве
+    <br>private long[] a;   //ссылка на массив
+    <br>private int elems;  //количество элементов в массиве
 
-    public ArrayBubble(int max){    //конструктор класса
-        a = new long[max];          //создание массива размером max
-        elems = 0;                  //при создании массив содержит 0 элементов
-    }
+  <br>  public ArrayBubble(int max){    //конструктор класса
+  <br>      a = new long[max];          //создание массива размером max
+  <br>      elems = 0;                  //при создании массив содержит 0 элементов
+  <br>  }
 
-    public void into(long value){   //метод вставки элемента в массив
-        a[elems] = value;           //вставка value в массив a
-        elems++;                    //размер массива увеличивается
-    }
+  <br>  public void into(long value){   //метод вставки элемента в массив
+  <br>      a[elems] = value;           //вставка value в массив a
+   <br>     elems++;                    //размер массива увеличивается
+  <br>  }
 
-    public void printer(){          //метод вывода массива в консоль
-        for (int i = 0; i < elems; i++){    //для каждого элемента в массиве
-            System.out.print(a[i] + " ");   //вывести в консоль
-            System.out.println("");         //с новой строки
-        }
-        System.out.println("----Окончание вывода массива----");
-    }
+   <br> public void printer(){          //метод вывода массива в консоль
+   <br>     for (int i = 0; i < elems; i++){    //для каждого элемента в массиве
+    <br>        System.out.print(a[i] + " ");   //вывести в консоль
+      <br>      System.out.println("");         //с новой строки
+      <br>  }
+      <br>  System.out.println("----Окончание вывода массива----");
+   <br> }
 
-    private void toSwap(int first, int second){ //метод меняет местами пару чисел массива
-        long dummy = a[first];      //во временную переменную помещаем первый элемент
-        a[first] = a[second];       //на место первого ставим второй элемент
-        a[second] = dummy;          //вместо второго элемента пишем первый из временной памяти
-    }
+  <br>  private void toSwap(int first, int second){ //метод меняет местами пару чисел массива
+    <br>    long dummy = a[first];      //во временную переменную помещаем первый элемент
+   <br>     a[first] = a[second];       //на место первого ставим второй элемент
+  <br>      a[second] = dummy;          //вместо второго элемента пишем первый из временной памяти
+  <br>  }
 
-    public void bubbleSorter(){     //МЕТОД ПУЗЫРЬКОВОЙ СОРТИРОВКИ
-        for (int out = elems - 1; out >= 1; out--){  //Внешний цикл
-            for (int in = 0; in < out; in++){       //Внутренний цикл
-                if(a[in] > a[in + 1])               //Если порядок элементов нарушен
-                    toSwap(in, in + 1);             //вызвать метод, меняющий местами
-            }
-        }
-    }
-}
+  <br>  public void bubbleSorter(){     //МЕТОД ПУЗЫРЬКОВОЙ СОРТИРОВКИ
+  <br>      for (int out = elems - 1; out >= 1; out--){  //Внешний цикл
+   <br>         for (int in = 0; in < out; in++){       //Внутренний цикл
+   <br>             if(a[in] > a[in + 1])               //Если порядок элементов нарушен
+    <br>                toSwap(in, in + 1);             //вызвать метод, меняющий местами
+      <br>      }
+       <br> }
+    <br>}
+<br>}
 
-public class Main {
-    public static void main(String[] args) {
-        ArrayBubble array = new ArrayBubble(5); //Создаем массив array на 5 элементов
+<br>public class Main {
+   <br> public static void main(String[] args) {
+     <br>   ArrayBubble array = new ArrayBubble(5); //Создаем массив array на 5 элементов
 
-        array.into(163);       //заполняем массив
-        array.into(300);
-        array.into(184);
-        array.into(191);
-        array.into(174);
+       <br> array.into(163);       //заполняем массив
+     <br>   array.into(300);
+       <br> array.into(184);
+      <br>  array.into(191);
+      <br>  array.into(174);
 
-        array.printer();            //выводим элементы до сортировки
-        array.bubbleSorter();       //ИСПОЛЬЗУЕМ ПУЗЫРЬКОВУЮ СОРТИРОВКУ
-        array.printer();            //снова выводим отсортированный йсписок
-    }
-}
+       <br> array.printer();            //выводим элементы до сортировки
+       <br> array.bubbleSorter();       //ИСПОЛЬЗУЕМ ПУЗЫРЬКОВУЮ СОРТИРОВКУ
+       <br> array.printer();            //снова выводим отсортированный йсписок
+   <br> }
+<br>}
     </div>
     
     <div style="text-align:center" id="footer">
