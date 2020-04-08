@@ -103,13 +103,13 @@ ul li a:hover{
     float: left;
     text-align: left;
 }
+#down a:hover{
+    color:#5094f2;
+}
 #Social{
     padding-top: 10px;
     float: right;
     text-align: right;
-}
-#Contact li{
-    list-style:none;
 }
 #down{
     text-align: center;
