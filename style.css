@@ -10,13 +10,11 @@
 .classNav{  
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#cards ul li {
+#cards img{
+    padding-left: 120px;
     align-content: center;
-    padding-left: 190px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 21px; 
     text-align: center;
-    color: dodgerblue;
 }
 #side-menu{
     box-sizing: border-box;
@@ -26,6 +24,29 @@
     text-align: justify-all;
     background-color: beige;
 }
+.bottomBody{
+    margin-top: -10px;
+    background: url(images/triangles.png) no-repeat;
+    background-size: 100%;    
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    text-align:center;
+    padding-top: 50px;
+    color: black;
+}
+.bottomBody strong{
+    text-align: center;
+}
+.bottomBody a{
+    text-decoration: none;
+    color: black;
+}
+.bottomBody a:hover{
+    color:#5094f2;
+}
+.bottomBody img{
+    padding-left: 100px;
+}
 .headBody{
     font-size: 40px;
     color: white;
@@ -33,26 +54,31 @@
     background: url(images/body.png) no-repeat;
     background-size:cover;
     padding-left: 120px;
+    z-index: -1;
 }
 .headBody1{
-        padding: 20px;
-}
-.bottomBody{
     
+}
+
+ul li a:hover{
+    border-bottom: 2px solid #5094f2;
 }
 /*#navigation{
     display: inline;
 }*/
 #content{
     float: left;
-    
+   
 }
 #footer{
+    margin-top: 10px;
     clear: both;
     background: url(images/footer.png) no-repeat;
     background-size: cover;
 }
-
+.classPadding{
+    padding: 100px;
+}
 #footer p{
     font-size: 14px;
     text-align: center;
