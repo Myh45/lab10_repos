@@ -90,13 +90,33 @@ ul li a:hover{
     padding-top: 100px;
 }
 .classMainTextic{
-    padding: 30px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
 }
+
 .headBody img{
      padding-bottom: 20px;
     padding-top: 20px;
+}
+#Contact{
+    padding-top: 10px;
+    float: left;
+    text-align: left;
+}
+#Social{
+    padding-top: 10px;
+    float: right;
+    text-align: right;
+}
+#Contact li{
+    list-style:none;
+}
+#down{
+    text-align: center;
+}
+#down a{
+    text-decoration: none;
+    color: black;
 }
 .center {
   display: block;
@@ -130,7 +150,7 @@ ul li a:hover{
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 320px;
+  max-width: 600px;
 }
 
 #caption {
