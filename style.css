@@ -75,6 +75,7 @@ ul li a:hover{
     clear: both;
     background: url(images/footer.png) no-repeat;
     background-size: cover;
+    background-color: black;
 }
 .classPadding{
     padding: 100px;
@@ -92,6 +93,11 @@ ul li a:hover{
 .classMainTextic{
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 20px;
+}
+.classMainTextic1{
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    color: white;
 }
 
 .headBody img{
@@ -111,12 +117,18 @@ ul li a:hover{
     float: right;
     text-align: right;
 }
+#Social a{
+padding: 5px;
+    text-decoration: none;
+}
 #down{
     text-align: center;
+    align-content: center;
+    color: white;
 }
 #down a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .center {
   display: block;
